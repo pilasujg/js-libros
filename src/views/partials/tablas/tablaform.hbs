@@ -1,0 +1,59 @@
+<form action="/books/add" method="POST">
+
+  <div class="container py-5">
+    <div class="col-8 mb-3">
+      <label for="titulo" class="form-label">Título</label>
+      <input
+        type="Text"
+        name="titulo"
+        class="form-control"
+        id="titulo"
+        placeholder="escribe el título"
+      />
+    </div>
+    <div class="col-8 mb-3">
+      <label for="autor" class="form-label">Autor</label>
+      <input
+        type="Text"
+        name="autor"
+        class="form-control"
+        id="autor"
+        placeholder="escribe el autor"
+      />
+    </div>
+    <div class="col-8 mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Género</label>
+      <select class="form-select" name="genero" id="inputGroupSelect01">
+        <option selected>Excoge...</option>
+        <option value="historica">Histórica</option>
+        <option value="thriller">Thriller</option>
+        <option value="drama">Drama</option>
+        <option value="otro">Otro</option>
+        <option value="novela">Novela</option>
+      </select>
+    </div>
+    <div class="col-8 mb-3">
+      <label for="opinion" class="form-label">Opinión</label>
+      <input
+        type="Number"
+        name="opinion"
+        class="form-control"
+        id="opinion"
+        max="10"
+        min="1"
+        placeholder="opinion"
+      />
+    </div>
+    <div class="col-8 mb-3">
+      <label for="trama" class="form-label">Trama</label>
+      <textarea
+        class="form-control"
+        name="trama"
+        id="Trama"
+        rows="3"
+        cols="6"
+      ></textarea>
+    </div>
+    <button class="btn btn-primary btn-block" type="summit">Guardar</button>
+  </div>
+</form>

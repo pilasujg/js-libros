@@ -1,0 +1,23 @@
+
+   <table class="table table-striped table-success">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Opinión</th>
+        <th>Edición</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each libro}}
+        <tr>
+          <td>{{@index}}</td>
+          <td><strong>{{titulo}}</strong></td>
+          <td>{{autor}}</td>
+          <td>{{opinion}} </td>
+          <td><a href="/books/edit-form/{{_id}}"><i class="fa-solid fa-pencil"></i></a></td>
+          </tr>
+             {{/each}}
+    </tbody>
+  </table>
